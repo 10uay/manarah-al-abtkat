@@ -34,7 +34,6 @@ export default function M_Home_SectionThree({ portfolio, domain }) {
                   <div>
                     <img
                       src={main_img}
-                      width="500"
                       height="500"
                       alt="main image for work"
                       sizes="(max-width: 640px) 350px, (max-width: 1024px) 400px, 500px"
