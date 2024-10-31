@@ -61,17 +61,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header>
-          <UpNavbar hide={true} />
-          <NavbarWithMegaMenu
-            t={t}
-            services={services}
-            solutions={solutions}
-            systems={systems}
-            domain={domain}
-          />
-        </header>
-
         {loadingSolutions === true ||
         loadingServices === true ||
         loadingSystems === true ||
@@ -80,12 +69,10 @@ function App() {
           <>
             <div className="card container mx-auto">
               <div className="border-round border-1 surface-border p-4 surface-card">
-                <div className="flex mb-3">
-                  <Skeleton
-                    shape="circle"
-                    size="4rem"
-                    className="mr-2"
-                  ></Skeleton>
+                <div className="w-full mb-16">
+                  <Skeleton height="3rem"></Skeleton>
+                </div>
+                <div className="flex mb-3 justify-center">
                   <div>
                     <Skeleton width="10rem" className="mb-2"></Skeleton>
                     <Skeleton width="5rem" className="mb-2"></Skeleton>
@@ -93,7 +80,7 @@ function App() {
                   </div>
                 </div>
                 <Skeleton width="100%" height="200px"></Skeleton>
-                <div className="flex justify-content-between mt-3">
+                <div className="flex justify-center mt-3">
                   <Skeleton width="8rem" height="2rem"></Skeleton>
                 </div>
               </div>
@@ -101,129 +88,149 @@ function App() {
 
             <div className="card container mx-auto">
               <div className="border-round border-1 surface-border p-4 surface-card">
-                <div className="flex mb-3">
-                  
+                <div className="flex justify-center mb-3">
                   <div>
                     <Skeleton width="10rem" className="mb-2"></Skeleton>
                     <Skeleton height="1.5rem"></Skeleton>
                   </div>
                 </div>
                 <Skeleton width="100%" height="100px"></Skeleton>
-                <div className="flex justify-content-between mt-3">
-                  <Skeleton width="4rem" height="2rem" className="me-3"></Skeleton>
+                <div className="flex justify-center mt-3">
+                  <Skeleton
+                    width="4rem"
+                    height="2rem"
+                    className="me-3"
+                  ></Skeleton>
                   <Skeleton width="4rem" height="2rem"></Skeleton>
+                </div>
+                <div className="w-full mt-7">
+                  <Skeleton height="10rem"></Skeleton>
                 </div>
               </div>
             </div>
           </>
         ) : (
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  services={services}
-                  domain={domain}
-                  portfolio={portfolio}
-                />
-              }
-            />
-            <Route path="/contact-us" element={<Contact_us />} />
-
-            <Route
-              path="/about"
-              element={<About services={services} domain={domain} t={t} />}
-            />
-
-            {/* services */}
-            <Route path="/services">
-              {services &&
-                services.map(({ path, data }, index) => (
-                  <Route
-                    path={path}
-                    element={<Service data={data} domain={domain} />}
-                    key={index}
+          <>
+            <header>
+              <UpNavbar hide={true} />
+              <NavbarWithMegaMenu
+                t={t}
+                services={services}
+                solutions={solutions}
+                systems={systems}
+                domain={domain}
+              />
+            </header>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home
+                    services={services}
+                    domain={domain}
+                    portfolio={portfolio}
                   />
-                ))}
-            </Route>
+                }
+              />
+              <Route path="/contact-us" element={<Contact_us />} />
 
-            {/* solutions */}
-            <Route path="/solutions">
-              {solutions &&
-                solutions.map(({ path, data }, index) => (
-                  <Route
-                    path={path}
-                    element={<Solution data={data} domain={domain} />}
-                    key={index}
-                  />
-                ))}
-            </Route>
+              <Route
+                path="/about"
+                element={<About services={services} domain={domain} t={t} />}
+              />
 
-            {/* systems */}
-            <Route path="/systems">
-              {systems &&
-                systems.map(({ path, data }, index) => (
-                  <Route
-                    path={path}
-                    element={<System data={data} domain={domain} />}
-                    key={index}
-                  />
-                ))}
-            </Route>
-
-            {/* portfolio */}
-            <Route
-              path="/portfolio"
-              element={<Portfolio portfolio={portfolio} />}
-            />
-            <Route path="/portfolio">
-              {portfolio &&
-                portfolio.map((work, index) => (
-                  <Route
-                    key={index}
-                    path={work.path}
-                    element={<Work info={work} />}
-                  />
-                ))}
-            </Route>
-
-            {/* blog */}
-            <Route path="/blog" element={<Blog domain={domain} />} />
-            {blog && (
-              <Route path="/blog">
-                {blog.map((article, index) => (
-                  <Route
-                    key={index}
-                    path={article.slug}
-                    element={<Article info={article} />}
-                  />
-                ))}
+              {/* services */}
+              <Route path="/services">
+                {services &&
+                  services.map(({ path, data }, index) => (
+                    <Route
+                      path={path}
+                      element={<Service data={data} domain={domain} />}
+                      key={index}
+                    />
+                  ))}
               </Route>
-            )}
 
-            {/* dashboards */}
-            <Route path="/admin-dashboard-H9S8FFPHG3WO94CYTVN39ONTY9W38TY983O">
-              <Route
-                path="services-solutions-systems"
-                element={<SSS_Dashboard domain={domain} />}
-              />
-              <Route
-                path="portfolio"
-                element={<Portfolio_Dashboard domain={domain} />}
-              />
-              <Route path="blog" element={<Blog_Dashboard domain={domain} />} />
-            </Route>
+              {/* solutions */}
+              <Route path="/solutions">
+                {solutions &&
+                  solutions.map(({ path, data }, index) => (
+                    <Route
+                      path={path}
+                      element={<Solution data={data} domain={domain} />}
+                      key={index}
+                    />
+                  ))}
+              </Route>
 
-            {/* page not found */}
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
+              {/* systems */}
+              <Route path="/systems">
+                {systems &&
+                  systems.map(({ path, data }, index) => (
+                    <Route
+                      path={path}
+                      element={<System data={data} domain={domain} />}
+                      key={index}
+                    />
+                  ))}
+              </Route>
+
+              {/* portfolio */}
+              <Route
+                path="/portfolio"
+                element={<Portfolio portfolio={portfolio} />}
+              />
+              <Route path="/portfolio">
+                {portfolio &&
+                  portfolio.map((work, index) => (
+                    <Route
+                      key={index}
+                      path={work.path}
+                      element={<Work info={work} />}
+                    />
+                  ))}
+              </Route>
+
+              {/* blog */}
+              <Route path="/blog" element={<Blog domain={domain} />} />
+              {blog && (
+                <Route path="/blog">
+                  {blog.map((article, index) => (
+                    <Route
+                      key={index}
+                      path={article.slug}
+                      element={<Article info={article} />}
+                    />
+                  ))}
+                </Route>
+              )}
+
+              {/* dashboards */}
+              <Route path="/admin-dashboard-H9S8FFPHG3WO94CYTVN39ONTY9W38TY983O">
+                <Route
+                  path="services-solutions-systems"
+                  element={<SSS_Dashboard domain={domain} />}
+                />
+                <Route
+                  path="portfolio"
+                  element={<Portfolio_Dashboard domain={domain} />}
+                />
+                <Route
+                  path="blog"
+                  element={<Blog_Dashboard domain={domain} />}
+                />
+              </Route>
+
+              {/* page not found */}
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+            <Footer />
+            {/* downFooter */}
+            <p className="py-3 text-sm text-center text-white bg-main_color mt-2">
+              © 2024 Manarah Al Abtkar. All Rights Reserved
+            </p>
+          </>
         )}
-
-        <Footer />
-        {/* downFooter */}
-        <p className="py-3 text-sm text-center text-white bg-main_color mt-2">
-          © 2024 Manarah Al Abtkar. All Rights Reserved
-        </p>
       </BrowserRouter>
     </>
   );

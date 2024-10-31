@@ -347,8 +347,6 @@ export default function SSS_Dashboard({ domain }) {
     data: data,
   });
 
-  console.log(object);
-
   // object
   useEffect(() => {
     setObject((prevObject) => ({
@@ -822,7 +820,7 @@ export default function SSS_Dashboard({ domain }) {
   };
 
   // console.log(data)
-  // console.log(object);
+  console.log(object);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -1113,7 +1111,7 @@ export default function SSS_Dashboard({ domain }) {
                   />
                 )}
               </div>
-            </div>            
+            </div>
           </div>
 
           {/* third row */}

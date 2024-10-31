@@ -24,7 +24,7 @@ export default function M_Get_A_Service({ info }) {
           viewport={{ once: true }}
           className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] lg:text-4xl text-3xl font-bold mb-5 capitalize max-w-[700px] leading-[3rem] lg:leading-[3.7rem] text-white"
         >
-          {t(info?.title)}
+          {t("services-web-development-title-of-get-a-service-one")}
         </motion.h2>
         {info?.whatsapp_button && <WhatsAppButton text="get-service-now" />}
       </div>

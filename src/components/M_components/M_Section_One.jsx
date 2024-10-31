@@ -14,7 +14,7 @@ export default function M_Section_One({ info }) {
 
   return (
     <div className="container mx-auto px-3">
-      <h2 className="text-3xl font-bold text-text text-center mb-2 mx-auto w-fit">
+      <h2 className="text-3xl font-bold text-text text-center mb-2 mx-auto w-fit max-w-[700px]">
         <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
           {t(info?.title)}
         </BoxReveal>

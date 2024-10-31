@@ -41,14 +41,14 @@ export default function M_Slider({ info }) {
         carouselRef.current.next();
       }
     };
-
-    const interval = setInterval(scroll, 2000);
-
+    const interval = setInterval(scroll, 4000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className={`py-10 bg-[${info?.bg_color}] px-3`}>
+    <div
+      className={`py-10 bg-[${info?.bg_color}] bg-[#d3f9ff] rounded-xl px-3`}
+    >
       <div className="container mx-auto">
         <div className="space-y-2 mb-14 md:mb-16">
           <BoxReveal boxColor={"#2bfaff"} duration={0.5}>

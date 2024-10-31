@@ -28,7 +28,7 @@ export default function First_Slider({ info }) {
   // console.log(i18n.dir())
 
   return (
-    <div className="container mx-auto grid lg:grid-cols-5 gap-5 items-center px-3">
+    <div className="container mx-auto grid lg:grid-cols-5 gap-5 items-center px-3 !mt-24">
       <div className="lg:col-span-2">
         <h2 className="mb-2 text-3xl lg:text-4xl lg:leading-[3.7rem] font-bold leading-[2.8rem] capitalize text-[#737195]">
           {t(info?.first_slider?.title)}

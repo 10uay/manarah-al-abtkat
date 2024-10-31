@@ -4,7 +4,7 @@ export default function Portfolio_Section({ info }) {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-[url(/public/images/background.webp)] bg-cover px-3">
+    <div className="bg-[url(/public/images/background.webp)] bg-cover px-3 overflow-hidden">
       <div className="container mx-auto py-11">
         <h2 className="mb-12 text-3xl lg:text-4xl font-bold capitalize">
           {t("some-facts-about")}

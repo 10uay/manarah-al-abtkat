@@ -22,7 +22,6 @@ import "react-circular-progressbar/dist/styles.css";
 export default function Model_M_DBMS({
   data,
   setData,
-  domain,
   setTranslation_M_DBMS_EN,
   setTranslation_M_DBMS_AR,
   setTranslation_M_DBMS_DE,
@@ -313,7 +312,7 @@ export default function Model_M_DBMS({
       [data.M_DBMS[1].services[4].title]: translateTitle_2_FiveInEN,
       [data.M_DBMS[1].services[4].para]: translatePara_2_FiveInEN,
 
-      [data.M_DBMS[2].title]: translateTitle_3,
+      [data.M_DBMS[2].title]: translateTitle_3InEN,
       [data.M_DBMS[2].services[0].title]: translateTitle_3_OneInEN,
       [data.M_DBMS[2].services[0].para]: translatePara_3_OneInEN,
       [data.M_DBMS[2].services[1].title]: translateTitle_3_TwoInEN,
@@ -351,7 +350,7 @@ export default function Model_M_DBMS({
       [data.M_DBMS[1].services[4].title]: translateTitle_2_FiveInAR,
       [data.M_DBMS[1].services[4].para]: translatePara_2_FiveInAR,
 
-      [data.M_DBMS[2].title]: translateTitle_2InAR,
+      [data.M_DBMS[2].title]: translateTitle_3InAR,
       [data.M_DBMS[2].services[0].title]: translateTitle_3_OneInAR,
       [data.M_DBMS[2].services[0].para]: translatePara_3_OneInAR,
       [data.M_DBMS[2].services[1].title]: translateTitle_3_TwoInAR,
@@ -389,7 +388,7 @@ export default function Model_M_DBMS({
       [data.M_DBMS[1].services[4].title]: translateTitle_2_FiveInDE,
       [data.M_DBMS[1].services[4].para]: translatePara_2_FiveInDE,
 
-      [data.M_DBMS[2].title]: translateTitle_2InDE,
+      [data.M_DBMS[2].title]: translateTitle_3InDE,
       [data.M_DBMS[2].services[0].title]: translateTitle_3_OneInDE,
       [data.M_DBMS[2].services[0].para]: translatePara_3_OneInDE,
       [data.M_DBMS[2].services[1].title]: translateTitle_3_TwoInDE,
@@ -473,15 +472,15 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-dbms"
-                    value="title-of-dbms"
+                    htmlFor="title-of-dbms-1"
+                    value="title-of-dbms-1"
                     style={{
                       fontSize: "16px",
                     }}
                   />
                 </div>
                 <TextInput
-                  id="title-of-dbms"
+                  id="title-of-dbms-1"
                   style={{
                     fontSize: "16px",
                   }}
@@ -495,14 +494,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-EN"
+                  htmlFor="myTextarea-EN-dbms-1"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-EN-dbms-1"
                   style={{
                     fontSize: "16px",
                   }}
@@ -522,7 +521,7 @@ export default function Model_M_DBMS({
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-EN-dbms-1"
                   style={{
                     fontSize: "16px",
                   }}
@@ -535,14 +534,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-DE"
+                  htmlFor="myTextarea-DE-dbms-qq"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-DE"
+                  id="myTextarea-DE-dbms-qq"
                   style={{
                     fontSize: "16px",
                   }}
@@ -561,7 +560,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-title-one"
+                    htmlFor="title-of-m-dbms-services-title-one-dbms-ww"
                     value="title-of-services-title-one"
                     style={{
                       fontSize: "16px",
@@ -569,7 +568,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-title-one"
+                  id="title-of-m-dbms-services-title-one-dbms-ww"
                   style={{
                     fontSize: "16px",
                   }}
@@ -583,14 +582,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-services-title-one-dbms-ww-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-one-EN"
+                  id="title-of-m-dbms-services-title-one-dbms-ww-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -603,14 +602,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-one-AR"
+                  htmlFor="title-of-m-dbms-services-title-one-dbms-ww-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-one-AR"
+                  id="title-of-m-dbms-services-title-one-dbms-ww-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -623,14 +622,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-services-title-one-dbms-ww-EN"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-one-EN"
+                  id="title-of-m-dbms-services-title-one-dbms-ww-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -647,7 +646,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-para-one"
+                    htmlFor="title-of-m-dbms-services-para-one-dbms-ee"
                     value="title-of-services-para-one"
                     style={{
                       fontSize: "16px",
@@ -655,7 +654,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-para-one"
+                  id="title-of-m-dbms-services-para-one-dbms-ee"
                   style={{
                     fontSize: "16px",
                   }}
@@ -669,14 +668,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-one-EN"
+                  htmlFor="title-of-m-dbms-services-para-one-dbms-ee-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-one-EN"
+                  id="title-of-m-dbms-services-para-one-dbms-ee-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -689,14 +688,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-one-AR"
+                  htmlFor="title-of-m-dbms-services-para-one-dbms-ee-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-one-AR"
+                  id="title-of-m-dbms-services-para-one-dbms-ee-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -709,14 +708,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-one-DE"
+                  htmlFor="title-of-m-dbms-services-para-one-dbms-ee-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-one-DE"
+                  id="title-of-m-dbms-services-para-one-dbms-ee-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -735,7 +734,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-title-two"
+                    htmlFor="title-of-m-dbms-services-title-two-dbms-rr"
                     value="title-of-services-title-two"
                     style={{
                       fontSize: "16px",
@@ -743,7 +742,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-title-two"
+                  id="title-of-m-dbms-services-title-two-dbms-rr"
                   style={{
                     fontSize: "16px",
                   }}
@@ -757,14 +756,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-services-title-two-dbms-rr-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-two-EN"
+                  id="title-of-m-dbms-services-title-two-dbms-rr-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -777,14 +776,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-two-AR"
+                  htmlFor="title-of-m-dbms-services-title-two-dbms-rr-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-two-AR"
+                  id="title-of-m-dbms-services-title-two-dbms-rr-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -797,14 +796,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-services-title-two-dbms-rr-EN"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-two-EN"
+                  id="title-of-m-dbms-services-title-two-dbms-rr-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -821,7 +820,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-para-two"
+                    htmlFor="title-of-m-dbms-services-para-two-dbms-tt"
                     value="title-of-services-para-two"
                     style={{
                       fontSize: "16px",
@@ -829,7 +828,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-para-two"
+                  id="title-of-m-dbms-services-para-two-dbms-tt"
                   style={{
                     fontSize: "16px",
                   }}
@@ -843,14 +842,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-two-EN"
+                  htmlFor="title-of-m-dbms-services-para-two-dbms-tt-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-two-EN"
+                  id="title-of-m-dbms-services-para-two-dbms-tt-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -863,14 +862,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-two-AR"
+                  htmlFor="title-of-m-dbms-services-para-two-dbms-tt-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-two-AR"
+                  id="title-of-m-dbms-services-para-two-dbms-tt-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -883,14 +882,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-two-DE"
+                  htmlFor="title-of-m-dbms-services-para-two-dbms-tt-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-two-DE"
+                  id="title-of-m-dbms-services-para-two-dbms-tt-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -909,7 +908,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-title-three"
+                    htmlFor="title-of-m-dbms-services-title-three-dbms-yy"
                     value="title-of-services-title-three"
                     style={{
                       fontSize: "16px",
@@ -917,7 +916,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-title-three"
+                  id="title-of-m-dbms-services-title-three-dbms-yy"
                   style={{
                     fontSize: "16px",
                   }}
@@ -931,14 +930,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-services-title-three-dbms-yy-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-three-EN"
+                  id="title-of-m-dbms-services-title-three-dbms-yy-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -951,14 +950,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-three-AR"
+                  htmlFor="title-of-m-dbms-services-title-three-dbms-yy-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-three-AR"
+                  id="title-of-m-dbms-services-title-three-dbms-yy-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -971,14 +970,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-services-title-three-dbms-yy-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-three-EN"
+                  id="title-of-m-dbms-services-title-three-dbms-yy-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -995,7 +994,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-para-three"
+                    htmlFor="title-of-m-dbms-services-para-three-dbms-uu"
                     value="title-of-services-para-three"
                     style={{
                       fontSize: "16px",
@@ -1003,7 +1002,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-para-three"
+                  id="title-of-m-dbms-services-para-three-dbms-uu"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1017,14 +1016,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-three-EN"
+                  htmlFor="title-of-m-dbms-services-para-three-dbms-uu-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-three-EN"
+                  id="title-of-m-dbms-services-para-three-dbms-uu-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1037,14 +1036,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-three-AR"
+                  htmlFor="title-of-m-dbms-services-para-three-dbms-uu-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-three-AR"
+                  id="title-of-m-dbms-services-para-three-dbms-uu-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1057,14 +1056,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-three-DE"
+                  htmlFor="title-of-m-dbms-services-para-three-dbms-uu-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-three-DE"
+                  id="title-of-m-dbms-services-para-three-dbms-uu-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1083,7 +1082,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-title-four"
+                    htmlFor="title-of-m-dbms-services-title-four-dbms-ii"
                     value="title-of-services-title-four"
                     style={{
                       fontSize: "16px",
@@ -1091,7 +1090,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-title-four"
+                  id="title-of-m-dbms-services-title-four-dbms-ii"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1105,14 +1104,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-services-title-four-dbms-ii-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-four-EN"
+                  id="title-of-m-dbms-services-title-four-dbms-ii-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1125,14 +1124,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-four-AR"
+                  htmlFor="title-of-m-dbms-services-title-four-dbms-ii-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-four-AR"
+                  id="title-of-m-dbms-services-title-four-dbms-ii-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1145,14 +1144,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-services-title-four-dbms-ii-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-four-EN"
+                  id="title-of-m-dbms-services-title-four-dbms-ii-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1169,7 +1168,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-para-four"
+                    htmlFor="title-of-m-dbms-services-para-four-dbms-oo"
                     value="title-of-services-para-four"
                     style={{
                       fontSize: "16px",
@@ -1177,7 +1176,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-para-four"
+                  id="title-of-m-dbms-services-para-four-dbms-oo"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1191,14 +1190,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-four-EN"
+                  htmlFor="title-of-m-dbms-services-para-four-dbms-oo-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-four-EN"
+                  id="title-of-m-dbms-services-para-four-dbms-oo-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1211,14 +1210,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-four-AR"
+                  htmlFor="title-of-m-dbms-services-para-four-dbms-oo-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-four-AR"
+                  id="title-of-m-dbms-services-para-four-dbms-oo-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1231,14 +1230,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-four-DE"
+                  htmlFor="title-of-m-dbms-services-para-four-dbms-oo-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-four-DE"
+                  id="title-of-m-dbms-services-para-four-dbms-oo-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1257,7 +1256,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-title-five"
+                    htmlFor="title-of-m-dbms-services-title-five-dbms-pp"
                     value="title-of-services-title-five"
                     style={{
                       fontSize: "16px",
@@ -1265,7 +1264,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-title-five"
+                  id="title-of-m-dbms-services-title-five-dbms-pp"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1279,14 +1278,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-services-title-five-dbms-pp-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-five-EN"
+                  id="title-of-m-dbms-services-title-five-dbms-pp-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1299,14 +1298,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-five-AR"
+                  htmlFor="title-of-m-dbms-services-title-five-dbms-pp-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-five-AR"
+                  id="title-of-m-dbms-services-title-five-dbms-pp-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1319,14 +1318,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-services-title-five-dbms-pp-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-title-five-EN"
+                  id="title-of-m-dbms-services-title-five-dbms-pp-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1343,7 +1342,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms-services-para-five"
+                    htmlFor="title-of-m-dbms-services-para-five-dbms-aa"
                     value="title-of-services-para-five"
                     style={{
                       fontSize: "16px",
@@ -1351,7 +1350,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms-services-para-five"
+                  id="title-of-m-dbms-services-para-five-dbms-aa"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1365,14 +1364,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-five-EN"
+                  htmlFor="title-of-m-dbms-services-para-five-dbms-aa-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-five-EN"
+                  id="title-of-m-dbms-services-para-five-dbms-aa-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1385,14 +1384,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-five-AR"
+                  htmlFor="title-of-m-dbms-services-para-five-dbms-aa-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-five-AR"
+                  id="title-of-m-dbms-services-para-five-dbms-aa-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1405,14 +1404,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms-services-para-five-DE"
+                  htmlFor="title-of-m-dbms-services-para-five-dbms-aa-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms-services-para-five-DE"
+                  id="title-of-m-dbms-services-para-five-dbms-aa-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1425,48 +1424,11 @@ export default function Model_M_DBMS({
             </div>
             {/* 5555555555555555555555555555555555555555555555555555555555555555555 */}
             <hr />
-            {/* image */}
-            {/* <div className="flex w-fit items-center justify-center">
-              <Label
-                htmlFor="dropzone-file-dbms"
-                className="flex p-5 h-fit w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
-              >
-                <div className="flex flex-col items-center justify-center">
-                  <svg
-                    className="mb-4 h-8 w-8 text-gray-500 dark:text-gray-400"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 20 16"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                    />
-                  </svg>
-                  <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-semibold">Click to upload</span> the
-                    image in dbms number one " 1 "
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
-                    PNG, JPG, WEBP
-                  </p>
-                </div>
-                <FileInput
-                  id="dropzone-file-dbms"
-                  className="hidden"
-                  onChange={handleUploadImage}
-                />
-              </Label>
-            </div> */}
             <div className="flex w-fit items-center justify-center">
               <form action="" className="hidden">
                 <input
                   type="file"
-                  id="dropzone-file-dbms"
+                  id="dropzone-file-dbms-1"
                   hidden
                   ref={fileRef}
                   accept="image/*"
@@ -1475,7 +1437,7 @@ export default function Model_M_DBMS({
               </form>
 
               <Label
-                htmlFor="dropzone-file-dbms"
+                htmlFor="dropzone-file-dbms-1"
                 className="flex p-5 h-fit w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
               >
                 <div className="flex flex-col items-center justify-center">
@@ -1527,7 +1489,7 @@ export default function Model_M_DBMS({
                 {data.M_DBMS[0].img && (
                   <img
                     src={data.M_DBMS[0].img}
-                    alt="dropzone-file-dbms"
+                    alt="dropzone-file-dbms-1"
                     className={`object-contain w-full h-full  mx-auto
                             ${
                               imagePercent > 0 && imagePercent < 100
@@ -1590,15 +1552,15 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-dbms_2"
-                    value="title-of-dbms_2"
+                    htmlFor="title-of-dbms-2"
+                    value="title-of-dbms-2"
                     style={{
                       fontSize: "16px",
                     }}
                   />
                 </div>
                 <TextInput
-                  id="title-of-dbms_2"
+                  id="title-of-dbms-2"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1612,14 +1574,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-EN"
+                  htmlFor="myTextarea-EN-dbms-2-aa"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-EN-dbms-2-aa"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1632,14 +1594,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-AR"
+                  htmlFor="myTextarea-AR-dbms-2-aa"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-AR-dbms-2-aa"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1652,14 +1614,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-DE"
+                  htmlFor="myTextarea-DE-dbms-2-aaa"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-DE"
+                  id="myTextarea-DE-dbms-2-aaa"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1678,7 +1640,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-title-one"
+                    htmlFor="title-of-m-dbms-2-services-title-one"
                     value="title-of-services-title-one"
                     style={{
                       fontSize: "16px",
@@ -1686,7 +1648,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-title-one"
+                  id="title-of-m-dbms-2-services-title-one"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1700,14 +1662,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-one-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-one-EN"
+                  id="title-of-m-dbms-2-services-title-one-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1720,14 +1682,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-one-AR"
+                  htmlFor="title-of-m-dbms-2-services-title-one-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-one-AR"
+                  id="title-of-m-dbms-2-services-title-one-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1740,14 +1702,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-one-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-one-EN"
+                  id="title-of-m-dbms-2-services-title-one-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1764,7 +1726,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-para-one"
+                    htmlFor="title-of-m-dbms-2-services-para-one-dbms-2"
                     value="title-of-services-para-one"
                     style={{
                       fontSize: "16px",
@@ -1772,7 +1734,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-para-one"
+                  id="title-of-m-dbms-2-services-para-one-dbms-2"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1786,14 +1748,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-one-EN"
+                  htmlFor="title-of-m-dbms-2-services-para-one-dbms-2-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-one-EN"
+                  id="title-of-m-dbms-2-services-para-one-dbms-2-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1806,14 +1768,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-one-AR"
+                  htmlFor="title-of-m-dbms-2-services-para-one-dbms-2-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-one-AR"
+                  id="title-of-m-dbms-2-services-para-one-dbms-2-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1826,14 +1788,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-one-DE"
+                  htmlFor="title-of-m-dbms-2-services-para-one-dbms-2-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-one-DE"
+                  id="title-of-m-dbms-2-services-para-one-dbms-2-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1852,7 +1814,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-title-two"
+                    htmlFor="title-of-m-dbms-2-services-title-two"
                     value="title-of-services-title-two"
                     style={{
                       fontSize: "16px",
@@ -1860,7 +1822,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-title-two"
+                  id="title-of-m-dbms-2-services-title-two"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1874,14 +1836,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-two-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-two-EN"
+                  id="title-of-m-dbms-2-services-title-two-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1894,14 +1856,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-two-AR"
+                  htmlFor="title-of-m-dbms-2-services-title-two-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-two-AR"
+                  id="title-of-m-dbms-2-services-title-two-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1914,14 +1876,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-two-EN"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-two-EN"
+                  id="title-of-m-dbms-2-services-title-two-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1938,7 +1900,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-para-two"
+                    htmlFor="title-of-m-dbms-2-services-para-two"
                     value="title-of-services-para-two"
                     style={{
                       fontSize: "16px",
@@ -1946,7 +1908,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-para-two"
+                  id="title-of-m-dbms-2-services-para-two"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1960,14 +1922,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-two-EN"
+                  htmlFor="title-of-m-dbms-2-services-para-two-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-two-EN"
+                  id="title-of-m-dbms-2-services-para-two-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -1980,14 +1942,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-two-AR"
+                  htmlFor="title-of-m-dbms-2-services-para-two-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-two-AR"
+                  id="title-of-m-dbms-2-services-para-two-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2000,14 +1962,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-two-DE"
+                  htmlFor="title-of-m-dbms-2-services-para-two-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-two-DE"
+                  id="title-of-m-dbms-2-services-para-two-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2026,7 +1988,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-title-three"
+                    htmlFor="title-of-m-dbms-2-services-title-three"
                     value="title-of-services-title-three"
                     style={{
                       fontSize: "16px",
@@ -2034,7 +1996,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-title-three"
+                  id="title-of-m-dbms-2-services-title-three"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2048,14 +2010,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-three-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-three-EN"
+                  id="title-of-m-dbms-2-services-title-three-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2070,14 +2032,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-three-AR"
+                  htmlFor="title-of-m-dbms-2-services-title-three-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-three-AR"
+                  id="title-of-m-dbms-2-services-title-three-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2092,14 +2054,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-three-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-three-EN"
+                  id="title-of-m-dbms-2-services-title-three-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2118,7 +2080,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-para-three"
+                    htmlFor="title-of-m-dbms-2-services-para-three"
                     value="title-of-services-para-three"
                     style={{
                       fontSize: "16px",
@@ -2126,7 +2088,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-para-three"
+                  id="title-of-m-dbms-2-services-para-three"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2140,14 +2102,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-three-EN"
+                  htmlFor="title-of-m-dbms-2-services-para-three-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-three-EN"
+                  id="title-of-m-dbms-2-services-para-three-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2160,14 +2122,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-three-AR"
+                  htmlFor="title-of-m-dbms-2-services-para-three-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-three-AR"
+                  id="title-of-m-dbms-2-services-para-three-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2180,14 +2142,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-three-DE"
+                  htmlFor="title-of-m-dbms-2-services-para-three-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-three-DE"
+                  id="title-of-m-dbms-2-services-para-three-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2206,7 +2168,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-title-four"
+                    htmlFor="title-of-m-dbms-2-services-title-four"
                     value="title-of-services-title-four"
                     style={{
                       fontSize: "16px",
@@ -2214,7 +2176,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-title-four"
+                  id="title-of-m-dbms-2-services-title-four"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2228,14 +2190,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-four-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-four-EN"
+                  id="title-of-m-dbms-2-services-title-four-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2248,14 +2210,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-four-AR"
+                  htmlFor="title-of-m-dbms-2-services-title-four-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-four-AR"
+                  id="title-of-m-dbms-2-services-title-four-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2268,14 +2230,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-four-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-four-EN"
+                  id="title-of-m-dbms-2-services-title-four-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2292,7 +2254,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-para-four"
+                    htmlFor="title-of-m-dbms-2-services-para-four"
                     value="title-of-services-para-four"
                     style={{
                       fontSize: "16px",
@@ -2300,7 +2262,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-para-four"
+                  id="title-of-m-dbms-2-services-para-four"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2314,14 +2276,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-four-EN"
+                  htmlFor="title-of-m-dbms-2-services-para-four-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-four-EN"
+                  id="title-of-m-dbms-2-services-para-four-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2334,14 +2296,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-four-AR"
+                  htmlFor="title-of-m-dbms-2-services-para-four-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-four-AR"
+                  id="title-of-m-dbms-2-services-para-four-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2354,14 +2316,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-four-DE"
+                  htmlFor="title-of-m-dbms-2-services-para-four-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-four-DE"
+                  id="title-of-m-dbms-2-services-para-four-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2380,7 +2342,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-title-five"
+                    htmlFor="title-of-m-dbms-2-services-title-five"
                     value="title-of-services-title-five"
                     style={{
                       fontSize: "16px",
@@ -2388,7 +2350,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-title-five"
+                  id="title-of-m-dbms-2-services-title-five"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2402,14 +2364,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-five-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-five-EN"
+                  id="title-of-m-dbms-2-services-title-five-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2422,14 +2384,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-five-AR"
+                  htmlFor="title-of-m-dbms-2-services-title-five-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-five-AR"
+                  id="title-of-m-dbms-2-services-title-five-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2442,14 +2404,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-2-services-title-five-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-title-five-EN"
+                  id="title-of-m-dbms-2-services-title-five-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2466,7 +2428,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_2-services-para-five"
+                    htmlFor="title-of-m-dbms-2-services-para-five"
                     value="title-of-services-para-five"
                     style={{
                       fontSize: "16px",
@@ -2474,7 +2436,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_2-services-para-five"
+                  id="title-of-m-dbms-2-services-para-five"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2488,14 +2450,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-five-EN"
+                  htmlFor="title-of-m-dbms-2-services-para-five-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-five-EN"
+                  id="title-of-m-dbms-2-services-para-five-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2508,14 +2470,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-five-AR"
+                  htmlFor="title-of-m-dbms-2-services-para-five-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-five-AR"
+                  id="title-of-m-dbms-2-services-para-five-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2528,14 +2490,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_2-services-para-five-DE"
+                  htmlFor="title-of-m-dbms-2-services-para-five-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_2-services-para-five-DE"
+                  id="title-of-m-dbms-2-services-para-five-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2553,7 +2515,7 @@ export default function Model_M_DBMS({
               <form action="" className="hidden">
                 <input
                   type="file"
-                  id="dropzone-file-dbms_2"
+                  id="dropzone-file-dbms-2"
                   hidden
                   ref={fileRef}
                   accept="image/*"
@@ -2562,7 +2524,7 @@ export default function Model_M_DBMS({
               </form>
 
               <Label
-                htmlFor="dropzone-file-dbms_2"
+                htmlFor="dropzone-file-dbms-2"
                 className="flex p-5 h-fit w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
               >
                 <div className="flex flex-col items-center justify-center">
@@ -2614,7 +2576,7 @@ export default function Model_M_DBMS({
                 {data.M_DBMS[1].img && (
                   <img
                     src={data.M_DBMS[1].img}
-                    alt="dropzone-file-dbms_2"
+                    alt="dropzone-file-dbms-2"
                     className={`object-contain w-full h-full  mx-auto
                             ${
                               imagePercent > 0 && imagePercent < 100
@@ -2677,15 +2639,15 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-dbms_3"
-                    value="title-of-dbms_3"
+                    htmlFor="title-of-dbms-3"
+                    value="title-of-dbms-3"
                     style={{
                       fontSize: "16px",
                     }}
                   />
                 </div>
                 <TextInput
-                  id="title-of-dbms_3"
+                  id="title-of-dbms-3"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2699,14 +2661,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-EN"
+                  htmlFor="myTextarea-EN-dbms-3"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-EN-dbms-3"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2719,14 +2681,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-AR"
+                  htmlFor="myTextarea-AR-dbms-3"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-AR-dbms-3"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2739,14 +2701,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="myTextarea-DE"
+                  htmlFor="myTextarea-DE-dbms-3"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="myTextarea-DE"
+                  id="myTextarea-DE-dbms-3"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2765,7 +2727,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-title-one"
+                    htmlFor="title-of-m-dbms-3-services-title-one"
                     value="title-of-services-title-one"
                     style={{
                       fontSize: "16px",
@@ -2773,7 +2735,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-title-one"
+                  id="title-of-m-dbms-3-services-title-one"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2787,14 +2749,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-one-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-one-EN"
+                  id="title-of-m-dbms-3-services-title-one-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2807,14 +2769,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-one-AR"
+                  htmlFor="title-of-m-dbms-3-services-title-one-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-one-AR"
+                  id="title-of-m-dbms-3-services-title-one-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2827,14 +2789,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-one-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-one-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-one-EN"
+                  id="title-of-m-dbms-3-services-title-one-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2851,7 +2813,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-para-one"
+                    htmlFor="title-of-m-dbms-3-services-para-one"
                     value="title-of-services-para-one"
                     style={{
                       fontSize: "16px",
@@ -2859,7 +2821,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-para-one"
+                  id="title-of-m-dbms-3-services-para-one"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2873,14 +2835,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-one-EN"
+                  htmlFor="title-of-m-dbms-3-services-para-one-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-one-EN"
+                  id="title-of-m-dbms-3-services-para-one-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2893,14 +2855,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-one-AR"
+                  htmlFor="title-of-m-dbms-3-services-para-one-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-one-AR"
+                  id="title-of-m-dbms-3-services-para-one-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2913,14 +2875,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-one-DE"
+                  htmlFor="title-of-m-dbms-3-services-para-one-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-one-DE"
+                  id="title-of-m-dbms-3-services-para-one-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2939,7 +2901,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-title-two"
+                    htmlFor="title-of-m-dbms-3-services-title-two"
                     value="title-of-services-title-two"
                     style={{
                       fontSize: "16px",
@@ -2947,7 +2909,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-title-two"
+                  id="title-of-m-dbms-3-services-title-two"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2961,14 +2923,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-two-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-two-EN"
+                  id="title-of-m-dbms-3-services-title-two-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -2981,14 +2943,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-two-AR"
+                  htmlFor="title-of-m-dbms-3-services-title-two-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-two-AR"
+                  id="title-of-m-dbms-3-services-title-two-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3001,14 +2963,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-two-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-two-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-two-EN"
+                  id="title-of-m-dbms-3-services-title-two-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3025,7 +2987,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-para-two"
+                    htmlFor="title-of-m-dbms-3-services-para-two"
                     value="title-of-services-para-two"
                     style={{
                       fontSize: "16px",
@@ -3033,7 +2995,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-para-two"
+                  id="title-of-m-dbms-3-services-para-two"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3047,14 +3009,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-two-EN"
+                  htmlFor="title-of-m-dbms-3-services-para-two-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-two-EN"
+                  id="title-of-m-dbms-3-services-para-two-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3067,14 +3029,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-two-AR"
+                  htmlFor="title-of-m-dbms-3-services-para-two-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-two-AR"
+                  id="title-of-m-dbms-3-services-para-two-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3087,14 +3049,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-two-DE"
+                  htmlFor="title-of-m-dbms-3-services-para-two-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-two-DE"
+                  id="title-of-m-dbms-3-services-para-two-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3113,7 +3075,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-title-three"
+                    htmlFor="title-of-m-dbms-3-services-title-three"
                     value="title-of-services-title-three"
                     style={{
                       fontSize: "16px",
@@ -3121,7 +3083,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-title-three"
+                  id="title-of-m-dbms-3-services-title-three"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3135,14 +3097,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-three-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-three-EN"
+                  id="title-of-m-dbms-3-services-title-three-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3157,14 +3119,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-three-AR"
+                  htmlFor="title-of-m-dbms-3-services-title-three-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-three-AR"
+                  id="title-of-m-dbms-3-services-title-three-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3179,14 +3141,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-three-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-three-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-three-EN"
+                  id="title-of-m-dbms-3-services-title-three-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3205,7 +3167,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-para-three"
+                    htmlFor="title-of-m-dbms-3-services-para-three"
                     value="title-of-services-para-three"
                     style={{
                       fontSize: "16px",
@@ -3213,7 +3175,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-para-three"
+                  id="title-of-m-dbms-3-services-para-three"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3227,14 +3189,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-three-EN"
+                  htmlFor="title-of-m-dbms-3-services-para-three-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-three-EN"
+                  id="title-of-m-dbms-3-services-para-three-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3247,14 +3209,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-three-AR"
+                  htmlFor="title-of-m-dbms-3-services-para-three-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-three-AR"
+                  id="title-of-m-dbms-3-services-para-three-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3267,14 +3229,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-three-DE"
+                  htmlFor="title-of-m-dbms-3-services-para-three-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-three-DE"
+                  id="title-of-m-dbms-3-services-para-three-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3293,7 +3255,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-title-four"
+                    htmlFor="title-of-m-dbms-3-services-title-four"
                     value="title-of-services-title-four"
                     style={{
                       fontSize: "16px",
@@ -3301,7 +3263,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-title-four"
+                  id="title-of-m-dbms-3-services-title-four"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3315,14 +3277,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-four-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-four-EN"
+                  id="title-of-m-dbms-3-services-title-four-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3335,14 +3297,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-four-AR"
+                  htmlFor="title-of-m-dbms-3-services-title-four-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-four-AR"
+                  id="title-of-m-dbms-3-services-title-four-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3355,14 +3317,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-four-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-four-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-four-EN"
+                  id="title-of-m-dbms-3-services-title-four-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3379,7 +3341,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-para-four"
+                    htmlFor="title-of-m-dbms-3-services-para-four"
                     value="title-of-services-para-four"
                     style={{
                       fontSize: "16px",
@@ -3387,7 +3349,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-para-four"
+                  id="title-of-m-dbms-3-services-para-four"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3401,14 +3363,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-four-EN"
+                  htmlFor="title-of-m-dbms-3-services-para-four-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-four-EN"
+                  id="title-of-m-dbms-3-services-para-four-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3421,14 +3383,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-four-AR"
+                  htmlFor="title-of-m-dbms-3-services-para-four-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-four-AR"
+                  id="title-of-m-dbms-3-services-para-four-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3441,14 +3403,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-four-DE"
+                  htmlFor="title-of-m-dbms-3-services-para-four-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-four-DE"
+                  id="title-of-m-dbms-3-services-para-four-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3467,7 +3429,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-title-five"
+                    htmlFor="title-of-m-dbms-3-services-title-five"
                     value="title-of-services-title-five"
                     style={{
                       fontSize: "16px",
@@ -3475,7 +3437,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-title-five"
+                  id="title-of-m-dbms-3-services-title-five"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3489,14 +3451,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-five-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-five-EN"
+                  id="title-of-m-dbms-3-services-title-five-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3509,14 +3471,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-five-AR"
+                  htmlFor="title-of-m-dbms-3-services-title-five-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-five-AR"
+                  id="title-of-m-dbms-3-services-title-five-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3529,14 +3491,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-title-five-EN"
+                  htmlFor="title-of-m-dbms-3-services-title-five-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-title-five-EN"
+                  id="title-of-m-dbms-3-services-title-five-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3553,7 +3515,7 @@ export default function Model_M_DBMS({
               <div className="w-full lg:w-72">
                 <div className="mb-2 block w-full">
                   <Label
-                    htmlFor="title-of-m-dbms_3-services-para-five"
+                    htmlFor="title-of-m-dbms-3-services-para-five"
                     value="title-of-services-para-five"
                     style={{
                       fontSize: "16px",
@@ -3561,7 +3523,7 @@ export default function Model_M_DBMS({
                   />
                 </div>
                 <TextInput
-                  id="title-of-m-dbms_3-services-para-five"
+                  id="title-of-m-dbms-3-services-para-five"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3575,14 +3537,14 @@ export default function Model_M_DBMS({
               {/* in en */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-five-EN"
+                  htmlFor="title-of-m-dbms-3-services-para-five-EN"
                   value="Enter your sentence in English:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-five-EN"
+                  id="title-of-m-dbms-3-services-para-five-EN"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3595,14 +3557,14 @@ export default function Model_M_DBMS({
               {/* in ar */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-five-AR"
+                  htmlFor="title-of-m-dbms-3-services-para-five-AR"
                   value="Enter your sentence in Arabic:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-five-AR"
+                  id="title-of-m-dbms-3-services-para-five-AR"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3615,14 +3577,14 @@ export default function Model_M_DBMS({
               {/* in de */}
               <div className="flex flex-col gap-2 lg:w-72 w-full">
                 <Label
-                  htmlFor="title-of-m-dbms_3-services-para-five-DE"
+                  htmlFor="title-of-m-dbms-3-services-para-five-DE"
                   value="Enter your sentence in Dautch:"
                   style={{
                     fontSize: "16px",
                   }}
                 />
                 <Textarea
-                  id="title-of-m-dbms_3-services-para-five-DE"
+                  id="title-of-m-dbms-3-services-para-five-DE"
                   style={{
                     fontSize: "16px",
                   }}
@@ -3636,47 +3598,11 @@ export default function Model_M_DBMS({
             {/* 5555555555555555555555555555555555555555555555555555555555555555555 */}
             <hr />
             {/* image */}
-            {/* <div className="flex w-fit items-center justify-center">
-              <Label
-                htmlFor="dropzone-file-dbms_3"
-                className="flex p-5 h-fit w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
-              >
-                <div className="flex flex-col items-center justify-center">
-                  <svg
-                    className="mb-4 h-8 w-8 text-gray-500 dark:text-gray-400"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 20 16"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                    />
-                  </svg>
-                  <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-semibold">Click to upload</span> the
-                    image in dbms_3 number one " 1 "
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
-                    PNG, JPG, WEBP
-                  </p>
-                </div>
-                <FileInput
-                  id="dropzone-file-dbms_3"
-                  className="hidden"
-                  onChange={handleUploadImage_3}
-                />
-              </Label>
-            </div> */}
             <div className="flex w-fit items-center justify-center">
               <form action="" className="hidden">
                 <input
                   type="file"
-                  id="dropzone-file-dbms_3"
+                  id="dropzone-file-dbms-3"
                   hidden
                   ref={fileRef}
                   accept="image/*"
@@ -3685,7 +3611,7 @@ export default function Model_M_DBMS({
               </form>
 
               <Label
-                htmlFor="dropzone-file-dbms_3"
+                htmlFor="dropzone-file-dbms-3"
                 className="flex p-5 h-fit w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
               >
                 <div className="flex flex-col items-center justify-center">
@@ -3737,7 +3663,7 @@ export default function Model_M_DBMS({
                 {data.M_DBMS[2].img && (
                   <img
                     src={data.M_DBMS[2].img}
-                    alt="dropzone-file-dbms_3"
+                    alt="dropzone-file-dbms-3"
                     className={`object-contain w-full h-full  mx-auto
                             ${
                               imagePercent > 0 && imagePercent < 100

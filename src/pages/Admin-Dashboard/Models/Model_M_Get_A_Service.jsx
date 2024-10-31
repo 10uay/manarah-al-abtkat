@@ -22,7 +22,6 @@ import "react-circular-progressbar/dist/styles.css";
 export default function Model_M_Get_A_Service({
   data,
   setData,
-  domain,
   setTranslation_M_Get_A_Service_EN,
   setTranslation_M_Get_A_Service_AR,
   setTranslation_M_Get_A_Service_DE,
@@ -112,6 +111,7 @@ export default function Model_M_Get_A_Service({
     );
   };
 
+
   return (
     <>
       <Button onClick={() => setOpenModal(true)} className="w-fit">
@@ -182,7 +182,7 @@ export default function Model_M_Get_A_Service({
                   }}
                 />
                 <Textarea
-                  id="myTextarea-EN"
+                  id="myTextarea-AR"
                   style={{
                     fontSize: "16px",
                   }}

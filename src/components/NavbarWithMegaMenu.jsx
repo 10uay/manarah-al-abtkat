@@ -37,7 +37,12 @@ const solutions_categories = [
 
 const systems_categories = ["comprehensive-business-systems"];
 
-function NavListMenu({ t, sectionListMenuItems, name }) {
+function NavListMenu({
+  t,
+  sectionListMenuItems,
+  name,
+  setOpenNav,
+}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -48,9 +53,7 @@ function NavListMenu({ t, sectionListMenuItems, name }) {
       ? solutions_categories
       : name === "navbar-systems"
       ? systems_categories
-          : null;
-  
-  
+      : null;
 
   const renderItems =
     categories?.map((SSS_category, categoryIndex) => (
@@ -74,6 +77,7 @@ function NavListMenu({ t, sectionListMenuItems, name }) {
                     onClick={() => {
                       setIsMobileMenuOpen(false);
                       setIsMenuOpen(false);
+                      setOpenNav(false);
                     }}
                   >
                     <MenuItem className="flex items-center gap-3 rounded-lg">
@@ -150,7 +154,7 @@ function NavListMenu({ t, sectionListMenuItems, name }) {
   );
 }
 
-function NavList({ t, services, solutions, systems }) {
+function NavList({ t, services, solutions, systems, setOpenNav }) {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
@@ -183,18 +187,21 @@ function NavList({ t, services, solutions, systems }) {
         t={t}
         sectionListMenuItems={services}
         name="navbar-services"
+        setOpenNav={setOpenNav}
       />
       {/* solutions List Menu */}
       <NavListMenu
         t={t}
         sectionListMenuItems={solutions}
         name="navbar-solutions"
+        setOpenNav={setOpenNav}
       />
       {/* systems List Menu */}
       <NavListMenu
         t={t}
         sectionListMenuItems={systems}
         name="navbar-systems"
+        setOpenNav={setOpenNav}
       />
 
       <Typography
@@ -297,6 +304,7 @@ export default function NavbarWithMegaMenu({
           solutions={solutions}
           systems={systems}
           domain={domain}
+          setOpenNav={setOpenNav}
         />
         <div className="mb-6 md:mb-0">
           <UpNavbar hide={false} />

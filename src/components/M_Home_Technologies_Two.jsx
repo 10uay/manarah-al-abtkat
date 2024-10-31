@@ -18,7 +18,7 @@ const ReviewCard = ({ img }) => {
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] dark:bg-white"
       )}
     >
       <div className="flex justify-center items-center h-full">
@@ -34,7 +34,7 @@ const ReviewCard = ({ img }) => {
   );
 };
 
-export default function M_Home_Technologies_Two({ domain }) {
+export default function M_Home_Technologies_Two() {
   const { t } = useTranslation();
 
   return (
@@ -49,7 +49,7 @@ export default function M_Home_Technologies_Two({ domain }) {
       <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden bg-transparent">
         <Marquee pauseOnHover className="[--duration:20s]">
           {reviews_One?.map((img, index) => (
-            <ReviewCard key={index} img={img} domain={domain} />
+            <ReviewCard key={index} img={img} />
           ))}
         </Marquee>
 

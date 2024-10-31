@@ -14,7 +14,7 @@ export const M_Questions = (props, ...questionsDefaults) => {
     ...props,
   };
   return (
-    <div className="container mx-auto px-3">
+    <div className="container mx-auto overflow-x-hidden">
       <div className="mb-10 md:mb-10 lg:mb-10">
         <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
           <h2 className="text-3xl lg:text-4xl max-w-[500px] mb-7 text-black font-bold capitalize">

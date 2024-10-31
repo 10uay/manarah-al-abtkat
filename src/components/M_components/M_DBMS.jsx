@@ -15,7 +15,7 @@ export default function M_DBMS({ info }) {
             </h2>
           </BoxReveal>
           {info?.services?.map(({ title, para }, index) => (
-            <div className="text-[#737195] mt-8" key={index}>
+            title && <div className="text-[#737195] mt-8" key={index}>
               <h4 className="flex items-center gap-2 font-bold text-lg text-black">
                 {info?.counter ? (
                   <span className="flex items-center justify-center border rounded-full border-third w-11 h-11 mb-2">
@@ -32,15 +32,14 @@ export default function M_DBMS({ info }) {
 
           {info?.whatsapp_button && <WhatsAppButton text="get-service-now" />}
         </div>
-        <div className={`order-1 lg:order-${info?.dir} mx-auto`}>
+        <div className={`order-1 lg:order-${info?.dir === 3 ? "2": "1"} mx-auto overflow-hidden`}>
           <img
             src={info?.img}
-            width="550"
+            // width="550"
             height="550"
             alt={t(info?.title)}
-            loading="lazy"
             sizes="(max-width: 768px) 350px, (max-width: 1024px) 400px, 550px"
-            className="object-contain mx-auto rounded-lg lg:drop-shadow-4xl drop-shadow-xl"
+            className="object-contain mx-auto rounded-lg drop-shadow-xl"
           />
         </div>
       </div>

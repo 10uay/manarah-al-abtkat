@@ -33,7 +33,7 @@ export default function Home({ services, portfolio, domain }) {
         <M_Work_With />
       </div>
       <Blog_Intro domain={domain} />
-      <Link to="/blog" className="w-full flex justify-center items-center  lg:text-start mx-auto container text-center mb-14">
+      <Link to="/blog" className="w-fit flex justify-center items-center  lg:text-start mx-auto container text-center mb-14">
         <MainButton text="read-more" />
       </Link>
       <div className="container mx-auto">

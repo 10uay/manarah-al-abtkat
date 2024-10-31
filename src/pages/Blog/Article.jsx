@@ -72,7 +72,9 @@ export default function Article({ info }) {
   return (
     <div className="container mx-auto mt-16 px-2">
       <div className="lg:ms-[80px]">
-        <p className="text-[#2A398C] font-semibold capitalize">{t(info?.category)}</p>
+        <p className="text-[#2A398C] font-semibold capitalize">
+          {t(info?.category)}
+        </p>
         <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
           <h1 className="mb-2 font-bold text-2xl">{t(info?.title)}</h1>
         </BoxReveal>
@@ -164,7 +166,7 @@ export default function Article({ info }) {
 
         {/* Similar Posts */}
         <div className="flex flex-col justify-center items-center mb-5 mt-16">
-          <h1 className="text-xl capitalize">similar articles</h1>
+          <h1 className="text-xl capitalize">{t("similar-articles")}</h1>
           <div className="flex flex-wrap gap-5 mt-5 justify-center">
             {similarPosts &&
               similarPosts.map((post, index) => (

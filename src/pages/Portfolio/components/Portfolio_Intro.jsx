@@ -8,21 +8,17 @@ export default function Portfolio_Intro() {
 
   return (
     <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden bg-background">
-      {/* // md:shadow-xl */}
       <div className=" px-3 container mx-auto">
         <div className="container flex gap-8 my-8 flex-col-reverse lg:flex-row  ">
           <div className="m-auto max-w-[800px] font-montserrat">
             <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold italic mb-3">
                 {t("portfolio-intro-title")}
-                {/* Transform The World With Your Idea. */}
               </h1>
             </BoxReveal>
             <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
               <p className="text-text-light text-xl">
                 {t("portfolio-intro-para")}
-                {/* From dream to reality, here are some apps we are proud to be
-                part of */}
               </p>
             </BoxReveal>
           </div>

@@ -1,6 +1,5 @@
 @media (max-width: 970px) {
   .Portfolio_Get_A_Service {
-    background: none;
+    background: none !important;
   }
-
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dropdown } from "flowbite-react"; // Assuming you've imported this correctly
 import { useTranslation } from "@/utils/Imports"; // Adjust the import path as needed
 import "./Dropdown_Lang.css";
-
+import Cookies from "js-cookie";
 
 const languageLabels = {
   en: "English",
@@ -13,7 +13,7 @@ const languageLabels = {
 
 const Dropdown_Lang = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState("en"); // Default language is English
+  const [language, setLanguage] = useState(Cookies.get("i18next") || "en");
 
   const handleChangeLanguage = (lang) => {
     setLanguage(lang);

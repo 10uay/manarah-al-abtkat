@@ -55,10 +55,9 @@
   transition-timing-function: cubic-bezier(.4, 0, .2, 1)
 }
 
-.footer_section .access_links ul li a.router-link-active.router-link-exact-active,
 .footer_section .access_links ul li a:hover {
   --tw-text-opacity: 1;
-  color: rgb(41 57 140/var(--tw-text-opacity))
+  color: #49ceb4
 }
 
 .footer_section .top_title {

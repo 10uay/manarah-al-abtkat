@@ -35,7 +35,7 @@ const Blog_Intro_Forwarded = (props, ref) => {
   const sortedPostsCopy = blog && [...blog].sort((a, b) => b.views - a.views);
   const top3Posts = sortedPostsCopy.slice(0, 3); // Access the copy
 
-  console.log(top3Posts);
+  // console.log(top3Posts);
 
   useEffect(() => {
     const handleResize = () => {

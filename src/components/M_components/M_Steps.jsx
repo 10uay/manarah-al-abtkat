@@ -5,13 +5,12 @@ import {
   motion,
   container,
   leftCard,
-  rightCard,
   middleImage,
 } from "@/utils/framer_motion_vars";
 
 export default function M_Steps({ info }) {
   const { t } = useTranslation();
-  console.log(info);
+  // console.log(info);
   return (
     <>
       {info?.title && (
@@ -22,7 +21,7 @@ export default function M_Steps({ info }) {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <div className="rounded-[3rem] lg:order-2">
+          <div className="lg:order-2">
             <motion.img
               variants={middleImage}
               src={info?.img}
@@ -31,10 +30,10 @@ export default function M_Steps({ info }) {
               alt={t(info?.title)}
               loading="lazy"
               sizes="(max-width: 768px) 400px, 500px"
-              className="max-h-[595px] mx-auto object-contain !rounded-[3rem]"
+              className="max-h-[595px] mx-auto object-contain lg:!rounded-[3rem] rounded-md"
             />
           </div>
-          <div className={`lg:order-${info?.dir} space-y-5`}>
+          <div className={`lg:order-${info?.dir} space-y-5 overflow-x-hidden`}>
             <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
               <h2 className="text-2xl lg:text-3xl lg:leading-[2.4rem] text-text font-semibold leading-[2.5rem] capitalize">
                 <span style={{ backgroundColor: "transparent" }}>

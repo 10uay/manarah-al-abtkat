@@ -29,7 +29,7 @@ export default function M_Home_SectionOne() {
               {t("it-sounds-like-you-have-embarked-on-an-impressive-journey")}
             </div>
             <div className="flex items-center gap-2 animated wow bounceIn animated">
-              <div className="relative">
+              <div className="relative dark:bg-black">
                 <img
                   format="webp"
                   alt="Langjährige Erfahrung im Bereich Softwaredienstleistungen || Years of experience in software services || سنوات من الخبرة في خدمات البرمجيات"
@@ -38,7 +38,7 @@ export default function M_Home_SectionOne() {
                   width="90"
                   height="80"
                   sizes="100px"
-                  className="object-contain"
+                  className="object-contain dark:text-white"
                 />
                 <span className="font-bold text-primary text-2xl absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
                   +6

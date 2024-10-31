@@ -11,9 +11,9 @@ export default function UpNavbar({ hide }) {
   return (
     <>
       <div
-        className={`bg-lite_color_UPnavbar p-2 ${
+        className={`bg-lite_color_UPnavbar p-2 mb-4 lg:mb-0 ${
           hide && "hidden"
-        }  relative z-50 md:block`}
+        }  relative z-50 lg:block`}
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-between items-center">
@@ -31,12 +31,12 @@ export default function UpNavbar({ hide }) {
                   height="15px"
                   className="rounded-sm"
                 />
-                <bdi>+966 500473509</bdi>
+                <bdi className="text-black">+966 500473509</bdi>
               </a>
             </div>
 
             <div className="flex gap-1 items-center text-primary">
-              <Dropdown_Lang />{" "}
+              <Dropdown_Lang />
               <a
                 href="https://www.tiktok.com"
                 target="_blank"
@@ -64,15 +64,6 @@ export default function UpNavbar({ hide }) {
               >
                 <RiTwitterXFill />
               </a>
-              {/* <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                className="flex w-8 h-8 justify-center rounded-full border gap-1 items-center text-sm text-main_color"
-                aria-label="linkedin"
-                title="linkedin"
-              >
-                <FaLinkedinIn />
-              </a> */}
               <a
                 href="https://instagram.com"
                 target="_blank"

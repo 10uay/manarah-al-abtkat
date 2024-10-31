@@ -29,12 +29,15 @@ export default function M_Home_SectionThree({ portfolio, domain }) {
               },
               index
             ) => (
-              <div className="project_card py-7 lg:py-11 last:pb-0" key={index}>
+              <div
+                className="project_card py-7 mb-4 lg:py-11 last:pb-0"
+                key={index}
+              >
                 <div className="project_card_content">
                   <div>
                     <img
                       src={main_img}
-                      width="500"
+                      // width="500"
                       height="500"
                       alt="main image for work"
                       sizes="(max-width: 640px) 350px, (max-width: 1024px) 400px, 500px"
@@ -90,7 +93,7 @@ export default function M_Home_SectionThree({ portfolio, domain }) {
                         </div>
                       </div>
                       <Link
-                        to={path}
+                        to={`/portfolio/${path}`}
                         className="mt-11 flex items-center text-primary font-medium text-lg gap-2 !text-main_color"
                         aria-label="More info"
                       >
@@ -103,9 +106,11 @@ export default function M_Home_SectionThree({ portfolio, domain }) {
               </div>
             )
           )}
-      <Link to={`/portfolio`} className="w-full text-center mx-auto">
-        <MainButton text="read-more" />
-      </Link>
+      <div className="w-full">
+        <Link to={`/portfolio`} className="block !w-fit mx-auto">
+          <MainButton text="read-more" />
+        </Link>
+      </div>
     </div>
   );
 }

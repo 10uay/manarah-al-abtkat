@@ -14,9 +14,9 @@ export default function M_Intro_One({ info }) {
       <div className="flex justify-center items-center flex-wrap gap-7">
         <div className="w-full lg:flex-1 order-2 lg:order-1">
           <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl 2xl:leading-[5rem] capitalize md:leading-[3.5rem] font-bold max-w-[630px] 2xl:max-w-[670px] max-h-fit text-[#073763] mx-auto lg:mx-0">
-            <h1 className="md:text-start text-center mx-auto w-fit">
+            <h1 className="md:text-start text-center md:mx-0 mx-auto w-fit">
               <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
-                <strong className="block">{t(info?.title)}</strong>
+                <strong className="block lg:pb-2">{t(info?.title)}</strong>
               </BoxReveal>
             </h1>
           </div>

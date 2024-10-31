@@ -11,7 +11,7 @@ export default function Footer() {
   }, [pathname]);
 
   return (
-    <footer className="mx-auto w-full bg-opacity-90 overflow-hidden mt-16">
+    <footer className="mx-auto w-full overflow-hidden mt-16">
       <div className="footer_section bg-third px-1">
         <div className=" py-16 lg:py-14 px-2 border-main_color border-2">
           <div className="grid grid-cols-3 gap-5 container mx-auto">
@@ -37,7 +37,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   <li className="capitalize">
                     <Link
-                      to="/service/web-development"
+                      to="/services/web-development"
                       aria-label="Web development"
                     >
                       {t("services-web-development-title-in-nav")}
@@ -45,26 +45,30 @@ export default function Footer() {
                   </li>
                   <li className="capitalize">
                     <Link
-                      to="/service/digital-marketing"
+                      to="/services/digital-marketing"
                       aria-label="Digital Marketing"
                     >
-                      {t("services-digital-marketing-title-in-nav")}
+                      {t(
+                        "services-digital-marketing-services-digital-marketing-title-in-nav"
+                      )}
                     </Link>
                   </li>
                   <li className="capitalize">
                     <Link
-                      to="/service/cloud-hosting"
+                      to="/services/cloud-hosting"
                       aria-label="cloud hosting"
                     >
-                      {t("services-cloud-hosting-title-in-nav")}
+                      {t("services-cloud-services-cloud-hosting-title-in-nav")}
                     </Link>
                   </li>
                   <li className="capitalize">
                     <Link
-                      to="/service/technical-analysis"
+                      to="/services/technical-analysis"
                       aria-label="technical analysis"
                     >
-                      {t("services-technical-analysis-title-in-nav")}
+                      {t(
+                        "services-additional-services-technical-analysis-title-in-nav"
+                      )}
                     </Link>
                   </li>
                 </ul>
@@ -77,7 +81,7 @@ export default function Footer() {
                   <li>
                     <Link
                       to="/about"
-                      className="router-link-active router-link-exact-active"
+                      className="router-link-exact-active"
                       title="About"
                       aria-current="page"
                     >

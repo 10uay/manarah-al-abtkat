@@ -10,8 +10,6 @@ import "@aws-amplify/ui-react/styles/button.layer.css"; // component specific st
 import BoxReveal from "@/components/magicui/box-reveal";
 
 export default function Portfolio_Pagination({ portfolio }) {
-  // console.log(portfolio[0]?.technologies?.icons);
-
   const { t } = useTranslation();
   const totalPages = portfolio?.length / 3;
   const [currentPageIndex, setCurrentPageIndex] = useState(1);
@@ -109,7 +107,7 @@ export default function Portfolio_Pagination({ portfolio }) {
                       </div>
                       <Link
                         to={`/portfolio/${path}`}
-                        className="mt-11 flex items-center text-primary font-medium text-lg gap-2 !text-main_color"
+                        className="mt-11 flex items-center text-primary font-medium text-lg gap-2 !text-main_color w-fit"
                         aria-label="More info"
                       >
                         {t("read-more")}

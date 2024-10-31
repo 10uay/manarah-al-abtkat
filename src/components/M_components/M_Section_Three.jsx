@@ -20,16 +20,15 @@ export default function M_Section_Three({ info }) {
       viewport={{ once: true }}
       className="container mx-auto grid gap-8 grid-cols-1 lg:grid-cols-2 items-center px-3"
     >
-      <div className={`rounded-[3rem] lg:order-${info?.dir}`}>
+      <div className={`lg:order-${info?.dir}`}>
         <motion.img
           variants={middleImage}
           src={info?.img}
           width="595"
           height="521"
           alt={t(info?.title)}
-          loading="lazy"
           sizes="(max-width: 768px) 400px, 500px"
-          className="max-h-[595px] mx-auto object-contain !rounded-[3rem]"
+          className="max-h-[595px] mx-auto object-contain lg:!rounded-[3rem] rounded-md"
         />
       </div>
       <div className="lg:order-1 space-y-5">
@@ -64,7 +63,7 @@ export default function M_Section_Three({ info }) {
                 <strong
                   style={{
                     backgroundColor: "transparent",
-                    color: "#044572",
+                    color: "#49ceb4",
                   }}
                 >
                   {t(title)}{" "}
