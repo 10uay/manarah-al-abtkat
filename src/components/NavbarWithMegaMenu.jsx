@@ -164,7 +164,10 @@ function NavList({ t, services, solutions, systems, setOpenNav }) {
         className="font-medium"
       >
         <Link to="/">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <ListItem
+            className="flex items-center gap-2 py-2 pr-4"
+            onClick={() => setOpenNav(false)}
+          >
             {t("navbar-home")}
           </ListItem>{" "}
         </Link>
@@ -176,7 +179,10 @@ function NavList({ t, services, solutions, systems, setOpenNav }) {
         className="font-medium"
       >
         <Link to="/about">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <ListItem
+            className="flex items-center gap-2 py-2 pr-4"
+            onClick={() => setOpenNav(false)}
+          >
             {t("navbar-about")}
           </ListItem>
         </Link>
@@ -211,7 +217,10 @@ function NavList({ t, services, solutions, systems, setOpenNav }) {
         className="font-medium"
       >
         <Link to="/portfolio">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <ListItem
+            className="flex items-center gap-2 py-2 pr-4"
+            onClick={() => setOpenNav(false)}
+          >
             {t("navbar-portfolio")}
           </ListItem>
         </Link>
@@ -223,7 +232,10 @@ function NavList({ t, services, solutions, systems, setOpenNav }) {
         className="font-medium"
       >
         <Link to="/blog">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <ListItem
+            className="flex items-center gap-2 py-2 pr-4"
+            onClick={() => setOpenNav(false)}
+          >
             {t("navbar-blog")}
           </ListItem>
         </Link>
@@ -235,7 +247,10 @@ function NavList({ t, services, solutions, systems, setOpenNav }) {
           color="blue-gray"
           className="font-medium"
         >
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <ListItem
+            className="flex items-center gap-2 py-2 pr-4"
+            onClick={() => setOpenNav(false)}
+          >
             {t("navbar-contact")}
           </ListItem>
         </Typography>
