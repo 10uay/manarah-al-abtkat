@@ -31,7 +31,7 @@ export default function M_Section_Three({ info }) {
           className="max-h-[595px] mx-auto object-contain lg:!rounded-[3rem] rounded-md"
         />
       </div>
-      <div className="lg:order-1 space-y-5">
+      <div className="lg:order-1 space-y-5 overflow-x-hidden">
         <h2 className="text-2xl lg:text-3xl lg:leading-[2.4rem] text-text font-semibold leading-[2.5rem] capitalize">
           <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
             <h2>

@@ -28,12 +28,12 @@ export const M_Questions = (props, ...questionsDefaults) => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="text-lg font-bold text-black border-b-[1px] w-full text-left mb-8"
+              className="text-lg font-bold text-black border-b-[1px] w-full text-start mb-8"
             >
-              <AccordionTrigger className="text-lg font-bold text-black w-full text-left pb-4 pt-0">
+              <AccordionTrigger className="text-lg text-start font-bold text-black w-full pb-4 pt-0">
                 {t(question.title)}
               </AccordionTrigger>
-              <AccordionContent className="pb-3 text-[16px] font-normal leading-6">
+              <AccordionContent className="text-start pb-3 text-[16px] font-normal leading-6">
                 {t(question.answer)}
               </AccordionContent>
             </AccordionItem>

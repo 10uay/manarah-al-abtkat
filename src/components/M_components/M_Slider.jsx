@@ -47,7 +47,7 @@ export default function M_Slider({ info }) {
 
   return (
     <div
-      className={`py-10 bg-[${info?.bg_color}] bg-[#d3f9ff] rounded-xl px-3`}
+      className={`py-10 bg-[${info?.bg_color}] bg-[#d3f9ff] rounded-xl px-3 overflow-x-scroll`}
     >
       <div className="container mx-auto">
         <div className="space-y-2 mb-14 md:mb-16">

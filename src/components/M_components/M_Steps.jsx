@@ -15,7 +15,7 @@ export default function M_Steps({ info }) {
     <>
       {info?.title && (
         <motion.div
-          className="container mx-auto grid gap-8 pb-0 grid-cols-1 lg:grid-cols-2 items-center px-3"
+          className="container mx-auto grid gap-8 pb-0 grid-cols-1 lg:grid-cols-2 items-center px-3 select-none"
           variants={container}
           initial="hidden"
           whileInView="show"

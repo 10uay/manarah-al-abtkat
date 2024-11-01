@@ -32,7 +32,7 @@ export default function M_Section_Two({ info }) {
             {t(info?.title)}
           </div>
         </BoxReveal>
-        <div className="mt-5">
+        <div className="mt-5 overflow-x-scroll">
           <ul>
             {info?.infos?.map(({ title, para, icon }, index) => (
               <motion.li
@@ -43,7 +43,7 @@ export default function M_Section_Two({ info }) {
                 {icon && (
                   <img
                     src={icon}
-                    alt="icons"
+                    alt={info?.title}
                     className="relative rounded-full w-9 h-9 object-cover"
                   />
                 )}

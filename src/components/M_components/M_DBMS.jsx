@@ -8,7 +8,7 @@ export default function M_DBMS({ info }) {
   return (
     <div className="container mx-auto px-3">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-10 items-center">
-        <div className="order-2 lg:order-2 space-y-5">
+        <div className="order-2 lg:order-2 space-y-5 overflow-x-hidden">
           <BoxReveal boxColor={"#2bfaff"} duration={0.5}>
             <h2 className="text-2xl md:text-3xl xl:text-5xl font-bold capitalize text-black max-w-[600px] lg:mb-10 mb-0">
               {t(info?.title)}

@@ -12,7 +12,6 @@ import M_Slider from "@/components/M_components/M_Slider";
 import M_Steps from "@/components/M_components/M_Steps";
 
 export default function Service({ data, domain }) {
-  // console.log(data)
   return (
     <div className="flex flex-col lg:gap-28 gap-24 px-3">
       {data.services_components.M_Intro_One && (
