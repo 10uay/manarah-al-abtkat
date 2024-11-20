@@ -103,6 +103,16 @@ export default function Footer() {
                       {t("navbar-blog")}
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="https://protfolio-louay-05.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="developer"
+                    >
+                      {t("developer")}
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

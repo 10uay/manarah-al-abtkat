@@ -2,9 +2,9 @@ import Home from "./pages/Home";
 import {
   cookies,
   useEffect,
-  useState,
+  // useState,
   useTranslation,
-  useLocation,
+  // useLocation,
 } from "@/utils/Imports";
 import UpNavbar from "./components/UpNavbar";
 import i18n from "./i18n";
