@@ -35,7 +35,8 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
-  const domain = "https://api-manarah-al-abtkar.onrender.com";
+  // const domain = "https://api-manarah-al-abtkar.onrender.com";
+  const domain = "http://89.116.51.14:3000";
 
   const { t } = useTranslation();
   const lang = cookies.get("i18next") || "en";
