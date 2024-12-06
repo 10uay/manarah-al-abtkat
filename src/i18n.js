@@ -7,8 +7,8 @@ import HttpBackend from "i18next-http-backend";
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
-// const domain = "https://api-manarah-al-abtkar.onrender.com";
-const domain = "http://89.116.51.14:3000";
+const domain = "https://api-manarah-al-abtkar.onrender.com";
+// const domain = "http://89.116.51.14:3000";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
