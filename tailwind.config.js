@@ -1,5 +1,5 @@
-const withMT = require("@material-tailwind/react/utils/withMT");
-const flowbite = require("flowbite-react/tailwind");
+import withMT from '@material-tailwind/react/utils/withMT';
+import flowbite from "flowbite-react/tailwind";
 
 module.exports = withMT({
   darkMode: ["class"],
